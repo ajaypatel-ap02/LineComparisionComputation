@@ -4,5 +4,5 @@
 /**
  * 
  */
-module lineComparisonComputation {
+module LineComparison {
 }
