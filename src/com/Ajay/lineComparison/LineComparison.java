@@ -16,7 +16,7 @@ public class LineComparison {
 		this.x2 = x2;
 		this.y2 = y2;
 	}
-	public double lengthOfLine() {
+	public double length() {
 		
 		double length = Math.sqrt(Math.pow(this.x2-this.x1, 2) + Math.pow(this.y2-this.y1, 2));
 		System.out.println("Length of a line is "+length);
@@ -24,10 +24,13 @@ public class LineComparison {
 		return length;
 	}
 	public void checkEquality(LineComparison lineComparison) {
-		if (this.lengthOfLine() == lineComparison.lengthOfLine()) {
-			System.out.println("Both lines are same");
-		}else {
-			System.out.println("Lines are not equal");
+		if (this.length() == lineComparison.length()) {
+			System.out.println("Both lines length are same");
+		}else if (this.length() > lineComparison.length()) {
+			System.out.println("Line 1 length is greater then line 2 length");
+		}else
+		{
+			System.out.println("Lines 1 length is less then line 2 length");
 		}
 	}
 
